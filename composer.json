@@ -1,0 +1,8 @@
+{
+    "require": {
+        "kreait/firebase-php": "^5.24",
+        "cloudinary/cloudinary_php": "^2"
+
+    }
+}
+
