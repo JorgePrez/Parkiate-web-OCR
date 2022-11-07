@@ -299,9 +299,12 @@ else{
           </b></th>
 
 
-          <th><b> Foto entrada
+          <th><b> Imagen
           </b></th>
+
+          <!-- 
           <th><b>Foto Salida</b></th>
+            -->
 
 
 
@@ -770,7 +773,7 @@ echo "<form action='editar_placa.php' method='get'>";
    
           </td>";
         
-      
+      /*
 
         if(!($id_deteccion_salida=='NA')) {
           echo  "<td>
@@ -795,6 +798,8 @@ echo "<form action='editar_placa.php' method='get'>";
       
 
         }
+
+        */
         
       
 

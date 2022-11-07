@@ -288,9 +288,14 @@ else{
           <!-- <th>Prospectos</th> -->
           <th><b>Placa</b></th>
      
-          <th><b>Auto</b></th>
 
+
+          <th><b>Imagen</b></th>
+
+      <!-- 
+          <th><b>Auto</b></th>
           <th><b>Foto tomada</b></th>
+            -->
           
 
 
@@ -558,11 +563,17 @@ Necesita correción (posiblemente)
           <a class='fancybox' href=$foto_auto_entrada><img style='max-width: 75px; height: auto; src=$foto_auto_entrada alt=''></a>     
 
  */
+
+
+ /*
           echo	"<td> 
           <a class='fancybox' href=$foto_auto_entrada><img class='img-responsive' src=$foto_auto_entrada width='75px' height='auto' alt=''></a>
    
           </td>";
         
+              */
+
+
         echo  
         
         "<td>

@@ -285,13 +285,10 @@ else{
         
           </b></th>
 
-          <th><b> Imagen
+          <th><b> Foto en entrada 
               <!--   <th><b> Foto en entrada //(más reciente)-->
           </b></th>
-
-          <!--
           <th><b>Foto en salida </b></th>
-            -->
 
           <th><b>Estado</b></th>
 
@@ -522,11 +519,6 @@ echo	"<td>
 
 </td>";
 
-
-
-
-/*
-
 if($foto_atras!='Pendiente')
  echo	"<td> 
           <a class='fancybox' href=$foto_atras><img class='img-responsive' src=$foto_atras width='75px' height='auto' alt=''></a>
@@ -548,7 +540,7 @@ if($foto_atras!='Pendiente')
            </td>";
 
 
-          } */
+          }
 
 
           if ($dentro_fuera=='D') {

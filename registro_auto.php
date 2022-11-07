@@ -301,9 +301,13 @@ else{
           <th><b> Tiempo Total
           </b></th>
 
-          <th><b> Foto entrada
+          <th><b> Imagen
           </b></th>
+      
+         <!-- 
           <th><b>Foto Salida</b></th>
+
+            -->
 
           
 
@@ -644,7 +648,7 @@ $hora_min_salida
           </td>";
         
       
-
+/*
         if(!($id_deteccion_salida=='NA')) {
           echo  "<td>
           <a class='fancybox' href=$foto_auto_salida><img class='img-responsive' src=$foto_auto_salida width='75px' height='auto' alt=''></a>        
@@ -668,7 +672,7 @@ $hora_min_salida
       
 
         }
-        
+        */
       
 
 
