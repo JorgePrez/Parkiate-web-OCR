@@ -201,9 +201,6 @@ if(preg_match('/^[A-Z]{2}\d{3}$/',$placa_detectada) and strlen($placa_detectada)
 
 
 //SI PARA ESTE PUNTO SIGUE necesotamdp correcion pasamos a ver los candidatos
-
-/*
-
  if($placa_necesita_correccion=='S'){
 
 
@@ -378,12 +375,14 @@ if( $placa_necesita_correccion_interno=='N'){
     
 
 }
+/*echo "\n";
+echo "Longitud: ";
+  echo $arrLength;
+
+*/
 
 
  }
-
-
- */
 
 //$bounding_box_placa = $xmin_placa + $ymin_placa + $xmax_placa + $ymax_placa;
 
