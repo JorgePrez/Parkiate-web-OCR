@@ -3,6 +3,32 @@
 <?php
 
 
+
+
+
+
+
+$endpoint_image_entrada='https://res.cloudinary.com/parkiate-ki/image/upload/v1667787690/placas_guatemala/312484765_5873832105994802_3903732262276315743_n_gmkq3a.jpg';
+
+
+
+$endpoint_image_salida='https://res.cloudinary.com/parkiate-ki/image/upload/v1667787690/placas_guatemala/312484765_5873832105994802_3903732262276315743_n_gmkq3a.jpg';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //ESP32 CAMS
 $endpoint_entrada='http://192.168.1.21/picture';
 $endpoint_salida='http://192.168.1.10/picture';
@@ -14,8 +40,9 @@ $endpoint_parqueo='http://192.168.1.14/picture';
 
 //$endpoint_image_entrada=$endpoint_image_salida='https://res.cloudinary.com/parkiate-ki/image/upload/v1656822671/placas_guatemala_pruebas/P673HRL.jpg';
 
-$endpoint_image_entrada='https://res.cloudinary.com/parkiate-ki/image/upload/v1667787734/placas_guatemala/312564850_5894541820607772_6755059195556972616_n_wp4o8w.jpg';
-$endpoint_image_salida='https://res.cloudinary.com/parkiate-ki/image/upload/v1667787734/placas_guatemala/312564850_5894541820607772_6755059195556972616_n_wp4o8w.jpg';
+
+
+
 
 
 

@@ -2,7 +2,6 @@
 
 <?php
 
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 use Cloudinary\Cloudinary;
@@ -46,33 +45,63 @@ include('dbcon.php');
 include 'image_sources.php';
 
 $id_parqueo =$id_parqueo_actual;
-$objeto = '1';
 
-    if((str_contains($objeto, '1')))
-    {
-    #echo "HAY OBJETO PROCESANNDO.......................:";echo "\n";
+
+
+
+while(true){
+
+    echo "\n";
+    echo "\n";
+
+
+
+echo "Esperando imagen (entrada): ";
+fscanf(STDIN, "%s", $tocheck);
+//echo "LEIDO:, $tocheck";
+echo "\n";
+
+//1. OBTENER PARAMETROS
+
+if (str_contains($tocheck, 'res.cloudinary.com')) {
+
+
+
+
+   $real_name =    strrchr($tocheck , '/');
+
+   $real_name = substr($real_name, 1);
+
+   //Hello World
+
+
+
+   echo "\n";
+   echo $real_name;
+   echo "\n";
+
+   $real_name = "Entrada_" . $real_name;
+
+
+
     $success=true;
 
-    //OBTENER IMAGEN DE CÁMARA
-  /*  $url = $endpoint_image_entrada; $ch = curl_init($url);
-    $dir = './';$file_name = basename('placa_entrada_p.jpeg');
-    $save_file_loc = $dir . $file_name;
-    $fp = fopen($save_file_loc, 'wb');
-    curl_setopt($ch, CURLOPT_FILE, $fp);curl_setopt($ch, CURLOPT_HEADER, 0);curl_exec($ch);fclose($fp);
-*/
 
 
-/* URL EXTERNA
-    $url = $endpoint_image_entrada;
+     /*
+    echo "\n";
+    echo $tocheck;
+    echo "\n"; */
+
+    $url = $tocheck;
     $ch = curl_init($url);
-    $dir = './';$file_name = basename('placa_entrada_p.jpeg');
+    $dir = './';$file_name = basename($real_name);
     $save_file_loc = $dir . $file_name;
     $fp = fopen($save_file_loc, 'wb');
     curl_setopt($ch, CURLOPT_FILE, $fp);curl_setopt($ch, CURLOPT_HEADER, 0);curl_exec($ch);fclose($fp);
-*/
 
 
-  $file = realpath('captura_entrada.png');  
+    $file = realpath($real_name);  
     if (function_exists('curl_file_create')) { $cFile = curl_file_create($file);} // php 5.5+
     else {$cFile = '@' . realpath($file);}
     $data = array(
@@ -88,9 +117,6 @@ $objeto = '1';
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
    // "Authorization: Token 222f6c6970669f844c36f2b342a45cae3d88f73c"  //API KEY
     ));
-
-
-
 
 
 
@@ -214,7 +240,7 @@ $objeto = '1';
 
               
 
-              echo "\n";echo "Success: camara_entrada registrando";$success=true;
+              echo "\n";echo "Success: imagen_entrada registrando";$success=true;
               echo "\n";  echo $placa_detectada;  echo "-->"; echo $placa_necesita_correccion; 
         }
 
@@ -225,9 +251,26 @@ $objeto = '1';
 
 
 
-    }
-
-
-
   
+              
+                                                               
+                                                         
+                                                      
+                                                      
+
+
+        
+
+
+}
+
+
+}
+
+
+
+
+?>
+
+
 

@@ -56,6 +56,8 @@ $id_parqueo =$id_parqueo_actual;
     $success=true;
 
     //OBTENER IMAGEN DE CÁMARA
+
+    /* URL externo
     $url = $endpoint_image_salida;
      $ch = curl_init($url);
     $dir = './';$file_name = basename('placa_salida_p.jpeg');
@@ -63,10 +65,12 @@ $id_parqueo =$id_parqueo_actual;
     $fp = fopen($save_file_loc, 'wb');
     curl_setopt($ch, CURLOPT_FILE, $fp);curl_setopt($ch, CURLOPT_HEADER, 0);curl_exec($ch);fclose($fp);
 
+    */
+
     //ENVIAR IMAGEN A API Y OBTENER RESPUESTA
  
 
-    $file = realpath('placa_salida_p.jpeg');  
+    $file = realpath('captura_salida.png');  
     if (function_exists('curl_file_create')) { $cFile = curl_file_create($file);} // php 5.5+
     else {$cFile = '@' . realpath($file);}
     $data = array(
